@@ -1,6 +1,6 @@
 {
   "name": "2fa-plus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Implementation of two-factor authentication in Node, made simple.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

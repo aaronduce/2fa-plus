@@ -1,11 +1,56 @@
 {
   "name": "2fa-plus",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Implementation of two-factor authentication in Node, made simple.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "private": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup",
+    "test": "jest"
   },
-  "author": "",
-  "license": "ISC"
+  "files": [
+    "dist",
+    "package.json",
+    "readme.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronduce/2fa-plus"
+  },
+  "keywords": [
+    "auth",
+    "2fa",
+    "mfa",
+    "token",
+    "key",
+    "base32",
+    "code",
+    "generator",
+    "totp",
+    "notp"
+  ],
+  "author": "Aaron Duce <aaron@duce.me.uk>",
+  "contributors": [
+    "Aaron Duce <aaron@duce.me.uk>"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/aaronduce/2fa-plus#readme",
+  "dependencies": {
+    "@types/notp": "^2.0.5",
+    "notp": "^2.0.3",
+    "qrcode": "^1.5.3",
+    "thirty-two": "^1.0.2",
+    "tslib": "^2.6.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.4",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  }
 }

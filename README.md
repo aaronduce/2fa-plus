@@ -27,4 +27,32 @@ Usage
 npm install 2fa-plus --save
 ```
 
-TBC
+### Generate a new secret
+
+```ts
+import { generateSecret } from "2fa-plus";
+
+const secret = generateSecret('Name', 'account@demo.com');
+
+// output: { secret, uri, qr }
+```
+
+### Generate a token from a secret
+
+```ts
+import { generateToken } from "2fa-plus";
+
+const token = generateToken(secret.secret);
+
+// output: token
+```
+
+### Verify a token
+
+```ts
+import { verifyToken } from "2fa-plus";
+
+const isValid = verifyToken(secret, token);
+
+// output: true/false
+```

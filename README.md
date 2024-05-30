@@ -2,6 +2,10 @@
 
 Implementation of two-factor authentication in Node, made simple.
 
+![NPM Downloads](https://img.shields.io/npm/dm/2fa-plus)
+![NPM Version](https://img.shields.io/npm/v/2fa-plus)
+![NPM License](https://img.shields.io/npm/l/2fa-plus)
+
 Credit for original implementation on which this has been abstracted from goes to [node-2fa](https://github.com/jeremyscalpello/node-2fa) - Jeremy Scalpello.
 
 This has been reworked from the ground up to:
